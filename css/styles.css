@@ -19,6 +19,7 @@
     --bg-wh-clr: #FFFFFF;
     --bg-middle-clr: #E5E5E5;
     --portfolio-border-clr: #EEEEEE;
+    --portfolio-header-border-clr: #ECECEC;
 
     /* others */
     --items: 9;
@@ -49,7 +50,11 @@ img {
     height: auto;
 }
 
+/* hidden */
 
+.visual-hidden {
+    visibility: hidden;
+}
 
 /* common styles */
 
@@ -82,7 +87,16 @@ img {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--black-txt-clr)
+    color: var(--black-txt-clr);
+    background-color: var(--bg-btn-clr);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px 6px 22px;
+    
+}
+
+.btn:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .btn:hover,
@@ -150,8 +164,8 @@ img {
 
 .header-link {
     display: block;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -187,21 +201,18 @@ img {
     color: var(--accent-txt-clr);
 
 }
+
+.header-portfolio {
+    border-bottom: 1px solid var(--portfolio-header-border-clr);
+}
 /* page studio start */
 
 /* section main idea */
 
-
-
-.container-idea {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 270px;
-    padding-right: 270px;
-}
-
 .idea {
     background-color: var(--bg-dark-clr);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .idea-h {
@@ -212,14 +223,19 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-txt-clr);
+    width: 696px;
 
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .idea-btn {
     background-color: var(--accent-txt-clr);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 32px 10px 32px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .idea-btn {
@@ -233,8 +249,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-    
 }
 
 /* section our advantages */
@@ -329,7 +343,7 @@ img {
     text-align: center;
     color: var(--black-txt-clr);
 
-    padding-top: 30px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -347,20 +361,20 @@ img {
 
 
 /* section  portfolio */
+
+.portfolio {
+    padding-top: 94;
+    padding-bottom: 94px;
+}
+
 .our-portfolio {
     background-color: var(--bg-middle-clr);
 }
 
-.container-portfolio {
-    padding-top: 90;
-    padding-bottom: 100px;
-}
-
 .buttons-list {
     display: flex;
-    padding-left: 280px;
-    padding-right: 280px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
+    justify-content: center;
 }
 
 .buttons-list-item:not(:last-child) {
@@ -380,7 +394,7 @@ img {
 }
 
 .portfolio-box {
-    margin: 20px 25px 20px 25px;
+    padding: 20px 25px 20px 25px;
 }
 
 .portfolio-item-h {
@@ -389,6 +403,7 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--black-txt-clr);
+    margin-bottom: 4px;
 }
 
 .portfolio-item-p {
@@ -397,12 +412,12 @@ img {
     color: var(--grey-txt-clr);
 }
 
-
-
 /* footer section */
 
 .footer {
     background-color: var(--bg-dark-clr);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-list {
@@ -413,20 +428,12 @@ img {
     margin-bottom: 10px;
 }
 
-.footer-logo {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
-}
-
-
 .footer-logo-link {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-txt-clr);
-
 }
 
 .footer-logo-part {
@@ -441,7 +448,6 @@ img {
     font-size: 14px;
     line-height: 1.71;
     color: var(--white-txt-clr);
-    
 }
 
 .footer-item-mail {
@@ -462,10 +468,6 @@ img {
 
 /* hidden */
 
-.adv-h {
-    visibility: hidden;
-}
-
-.our-portfolio {
+.visual-hidden {
     visibility: hidden;
 }
