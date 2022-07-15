@@ -52,8 +52,16 @@ img {
 
 /* hidden */
 
-.visual-hidden {
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+
 }
 
 /* common styles */
@@ -363,8 +371,7 @@ img {
 /* section  portfolio */
 
 .portfolio {
-    padding-top: 94;
-    padding-bottom: 94px;
+    padding: 94px 0;
 }
 
 .our-portfolio {
